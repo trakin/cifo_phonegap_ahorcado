@@ -1,0 +1,80 @@
+/* Scss Document */
+html, body {
+  margin: 0px; }
+
+.container {
+  width: 100%;
+  text-align: center; }
+  .container header {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #000000;
+    background-color: aliceblue; }
+    .container header #reset_marcador {
+      float: left;
+      background-color: darkcyan;
+      height: 40px;
+      padding: 10px 20px;
+      margin-left: 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      color: white; }
+    .container header .text {
+      float: right;
+      margin-right: 20px; }
+  .container .col_1 {
+    float: left;
+    width: 100%; }
+    .container .col_1 .fields {
+      float: left;
+      width: 100%;
+      margin: 20px; }
+      .container .col_1 .fields .field {
+        float: left;
+        width: 20px;
+        height: 30px;
+        margin-right: 5px;
+        border-bottom: 2px solid;
+        text-align: center;
+        font-size: 20pt;
+        font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; }
+    .container .col_1 .letters {
+      float: left;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box; }
+      .container .col_1 .letters button {
+        background-color: cadetblue;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer; }
+      .container .col_1 .letters button:hover, .container .col_1 .letters button.disabled {
+        background-color: darkseagreen; }
+      .container .col_1 .letters button:active {
+        background-color: aqua; }
+      .container .col_1 .letters button.disabled {
+        pointer-events: none; }
+  .container .col_2 {
+    float: left;
+    width: 100%; }
+    .container .col_2 #img_ahorcado {
+      margin-top: 40px;
+      height: 150px; }
+
+@media screen and (orientation: landscape) {
+  .container .col_1 {
+    width: 70%; }
+  .container .col_2 {
+    width: 25%; }
+    .container .col_2 #img_ahorcado {
+      width: 100px; } }
